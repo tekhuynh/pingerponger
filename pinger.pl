@@ -1,7 +1,7 @@
 use IO::Socket::INET;
 
 $host = $ARGV[0];
-$host or die "need host address";
+$host or die "Usage: perl pinger.pl <host address>";
 
 $socket = new IO::Socket::INET (
     PeerHost => $host,
